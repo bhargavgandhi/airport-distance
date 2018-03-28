@@ -1,0 +1,200 @@
+  /* ===========================
+     Author: Bhargav Gandhi (BG)
+     Description: airStyleMain.scss
+     =========================== */
+
+     /* Animate CSS */
+
+     .animated {
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+
+    @-webkit-keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .fadeIn {
+      -webkit-animation-name: fadeIn;
+      animation-name: fadeIn;
+    }
+
+    @-webkit-keyframes fadeInUp {
+      from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+      }
+
+      to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+      }
+
+      to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+      }
+    }
+
+    .fadeInUp {
+      -webkit-animation-name: fadeInUp;
+      animation-name: fadeInUp;
+    }
+
+
+    .main{
+      width: 90%;
+      margin: 7.5% auto;
+      text-align: center;
+
+      header{
+        font-size: 14px;
+        margin: 7.5% auto;
+      }  
+    }
+
+    #mainDetails{
+      width: 90%;
+      margin: 7.5% auto;
+      text-align: left;
+
+      h2, h3{
+        font-size: 16px;
+        margin: 10px auto;
+        font-weight: bold;
+        text-align: center;
+      }
+      h3{
+        font-size: 16px;
+        img{
+          width: 30px;
+        }
+      }
+      span{
+        font-size: 16px;
+        font-weight: normal;
+      }
+
+      img{
+        margin-right: 5px;
+        vertical-align: middle;
+        width: 25px;
+        max-width: 100%;
+      }
+
+    }
+
+    #gmap{
+      height: 100%;
+      width: 90%;
+      margin: 0 auto;
+      min-height: 250px;
+    }
+
+
+    .airBtn{
+      width: 50%;
+      max-width: 300px;
+      height: 60px;
+      margin: 5% auto;
+      padding: 0;
+      border:0;
+      border-radius: 0;
+      text-align: center;
+      display: block;
+      text-transform: uppercase;
+      font-family: $fontStack;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      cursor: pointer;
+      background: $buttonColor;
+      outline: none;
+      color: $fontColorLight;
+
+      &:hover,&:active, &:focus{
+        color: $fontColorLight;
+      }
+    }
+
+    #totDistance{
+      max-width: 250px;
+    }
+
+    #autocompleteList {
+
+     display: none;
+     width: 100%;
+     margin-top: -10px;
+
+     li { 
+      padding: 20px 15px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+      text-align: left;
+      color: #222;
+      background: #ddd;
+      list-style: none;
+      &:hover,&:active, &:focus{
+        color: $fontColorLight;
+        background: #666;
+      }
+
+    }
+
+    li.active{
+      color: $fontColorLight;
+      background: #666;
+    }
+  }
+
+  footer{
+    text-align: center;
+    .copyrightTxt{
+      text-align: center;
+      font-size: 12px;
+      color: #bababa;
+      line-height: 1.5;
+      letter-spacing: normal;
+      margin: 10px auto;
+
+      a{
+       text-align: center;
+       font-size: inherit;
+       color: #bababa;
+       line-height: 1.5;
+       letter-spacing: normal;
+     }
+   }
+ }

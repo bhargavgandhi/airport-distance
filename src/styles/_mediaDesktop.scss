@@ -1,0 +1,63 @@
+  /* ===========================
+     Author: Bhargav Gandhi (BG)
+     Description: _mediaDesktop.scss
+     =========================== */
+
+/* Media Queries Desktop */
+@media screen and (min-width: 1000px) {
+
+  .main{
+  margin: 5% auto;
+
+ header{
+    margin: 5% auto;
+  }  
+}
+
+#mainDetails{
+  margin: 5% auto;
+}
+
+#mainDetails{
+  margin: 5% auto;
+
+   h3{
+    img{
+      width: 35px;
+    }
+  }
+}
+  #gmap{
+    min-height: 500px;
+  }
+
+  /* Form Styles */
+  input {
+    margin: 3% auto 1px;
+    padding: 0 2% 0 3%;
+  }
+
+  input.awesomplete{
+    width: 96%;
+  }
+  input:focus + i.icon {
+    color: #000;
+  }
+  
+  i.icon{
+    position: absolute;
+    display: block;
+    font-size: 20px;
+    z-index: 0;
+    box-shadow: none !important;
+    padding: 0;
+    line-height: 55px;
+    text-align: center;
+    color: #c7c7c7;
+    cursor: pointer;
+    left: 10px;
+    top: 35px;
+  }
+
+
+}

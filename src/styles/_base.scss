@@ -1,0 +1,125 @@
+  /* ===========================
+     Author: Bhargav Gandhi (BG)
+     Description: _base.scss
+     =========================== */
+     @charset "utf-8";
+
+     /* Airport Distance Style Guide */
+
+     $fontStack: 'Maven Pro', sans-serif;
+     
+     $buttonColor: #888;
+     $buttonBorderColor: #444;
+
+     $bgColorHome: #ffffff;
+
+     $fontColor: #000000;
+     $fontColorLight: #ffffff;
+
+     $headerBG: #bababa;
+     $headerFont: #000;
+
+     /* how about we level the playing field - time to reset! */
+
+     html, body, div, span, applet, object, iframe,
+     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+     a, abbr, acronym, address, big, cite, code,
+     del, dfn, em, font, img, ins, kbd, q, s, samp,
+     small, strike, tt, var,
+     dl, dt, dd, ol, ul, li,
+     fieldset, form, label, legend,
+     table, caption, tbody, tfoot, thead, tr, th, td,
+     article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, button{
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: none;
+      font-weight: inherit;
+      font-style: inherit;
+      font-family: $fontStack;
+      vertical-align: baseline;
+      line-height:1;
+    }
+
+    /* html5 elements */
+    article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+      display: block;
+    }
+
+    *{
+      margin:0;
+      padding:0;
+    }
+
+    html, body {
+      margin:0;
+      padding:0;
+      width:100%;
+      color:$fontColor;
+      overflow-x:hidden;
+      font-size: 16px;
+      font-size: 1em;
+      font-family: $fontStack;
+    }
+
+    a{
+      text-decoration: none;
+      color:inherit;
+    }
+
+    p{
+      margin-top:10px;
+    }
+
+    .container{
+      padding:0;
+      background-color: transparent;
+      background: transparent;
+      max-width: 1200px;
+      margin:0 auto;
+    }
+
+    .row {
+      margin:0 2.5%;
+      width:95%;
+
+      article{
+        display:block;
+        vertical-align:middle;
+      }
+    }
+
+    div#preloader { 
+      position: fixed; 
+      left: 0; 
+      top: 0; 
+      z-index: 999; 
+      width: 100%; 
+      height: 100%; 
+      background: #efefef url('../images/loading.gif') no-repeat center center; 
+    } 
+
+    .Show {
+      display: block !important;
+    }
+
+    .Hide {
+     display: none !important;
+   }
+
+   .Hidden{
+    opacity: 0 !important;
+   }
+
+   body > header{
+    margin:0 auto;
+    text-align: center;
+    background: $headerBG;
+    color: $headerFont;
+    padding: 20px 0;
+    width: 100%;
+
+    h1#airLogo{
+      font-size: 20px;
+    }
+  }
