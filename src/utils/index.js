@@ -1,5 +1,4 @@
-var airportLists = [
-
+const airportLists = [
 "Los Angeles, CA (LAX-Los Angeles International Airport)",
 "Chicago, IL (ORD-Chicago O'Hare International Airport)",
 "New York, NY (JFK-John F Kennedy International Airport)",
@@ -21761,3 +21760,5 @@ var airportLists = [
 "Zachar Bay, AK (KZB-Zachar Bay Seaplane Base)",
 "Zapata, TX (Jennings Ranch Airport)"
 ];
+
+export default airportLists;
